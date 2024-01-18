@@ -1,3 +1,4 @@
+import 'package:ecom_app_w_bloc/features/home/ui/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholde();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.teal,
+      ),
+      home: Home(),
+    );
   }
 }
+
+//45:15
